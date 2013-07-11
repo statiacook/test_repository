@@ -1,0 +1,6 @@
+[user]	
+	name = Statia 
+	email = shcook@amnh.org
+[core]
+	editor = vim
+	excludesfile = /Users/statia/.gitignore_global
