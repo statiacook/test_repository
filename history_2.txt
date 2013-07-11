@@ -1,0 +1,500 @@
+   25  source configenv
+   26  idl
+   27  plot, lambda,dspect[*,6], psym=8, yrange=[0,.05]
+   28  oplot, lambda, mspect[*,incy,inct,inca,inp,inH,inssa,6], color=101
+   29  for i=0, nmu-1 do begin &$
+   30  window, i &$
+   31  plot, lambda,dspect[*,i], psym=8, yrange=[0,.05] &$
+   32  oplot, lambda, mspect[*,incy,inct,inca,inp,inH,inssa,i], color=101+i&$
+   33  endfor
+   34  idl
+   35  date
+   36  idl
+   37  source configenv
+   38  idl
+   39  cd analysis/work/mm/kdk/
+   40  scp -r sluszcz@beast.berkeley.edu:/indirect/mozzy1/kdekleer/carma/Io2013a_C2b/*.csh .
+   41  amacs Io_script.csh 
+   42  ssh -Y sluszcz@beast.berkeley.edu
+   43  source configenv
+   44  idl
+   45  source configenv
+   46  idl
+   47  cd /usr/local/lib/
+   48  ls
+   49  amacs .profile
+   50  cd analysis/work/mm/kdk/
+   51  ls
+   52  amacs Io_script_statia.csh &
+   53  ./Io_script_statia.csh selfcalcal
+   54  retall
+   55  source /Users/statia/miriad/source miriad_start.sh
+   56  source /Users/statia/miriad/miriad_start.sh
+   57  ./Io_script_statia.csh selfcalcal
+   58  ./Io_script_statia.csh startup
+   59  locate libiconf.2.dylib
+   60  locate libiconf.3.dylib
+   61  locate libgfortran.3.dylib
+   62  otool -L opt/local/lib/gcc45/libgfortran.3.dylib
+   63  locate libgfortran
+   64  cd /usr
+   65  locate libgfortran
+   66  cd
+   67  cd Downloads/
+   68  ls -ltr
+   69  sudo tar -xvf gcc-mlion.tar -C /
+   70  cd
+   71  cd /usr/local/lib/
+   72  ls
+   73  cd
+   74  ftp://ftp.astro.umd.edu/progs/carma/miriad_mac10.8_gfortran.tar.gz | tar zxf -
+   75  curl ftp://ftp.astro.umd.edu/progs/carma/miriad_mac10.8_gfortran.tar.gz | tar zxf -
+   76  ls
+   77  ls -ltr
+   78  cd miria
+   79  cd miriad
+   80  wget ftp://ftp.astro.umd.edu/progs/carma/miriad_mac10.8_gfortran.tar.gz
+   81  curl ftp://ftp.astro.umd.edu/progs/carma/miriad_mac10.8_gfortran.tar.gz | tar zxf -
+   82  curl ftp://ftp.astro.umd.edu/progs/carma/miriad_mac10.8.tar.gz | tar zxf -
+   83  cd miriad
+   84  install/make_miriad_starts
+   85  source miriad_start.csh
+   86  source miriad_start.sh
+   87  cd $MIR
+   88  ls
+   89  pwd
+   90  more VERSION
+   91    install/test_a_new_miriad_cvs rootdir=. reuse=1 auto=1
+   92  install/install.miriad
+   93  ls
+   94  cd install
+   95  ls
+   96  amacs install.miriad
+   97  ls
+   98  cd ..
+   99  ls
+  100  more VERSIONA
+  101  more VERSIONS
+  102  cd install
+  103  install/install.miriad
+  104  cd ..
+  105  install/install.miriad
+  106  install/install.miriad
+  107  cd ..
+  108  curl ftp://ftp.astro.umd.edu/progs/carma/miriad.tar.gz | tar zxf -
+  109  cd miriad
+  110    cvschroot :pserver:$USER@cvs.astro.umd.edu:/home/cvsroot
+  111  cvs login
+  112  cvs login
+  113   cvs update -d
+  114  amacs install/install.miriad
+  115  install/install.miriad
+  116  cd miriad/
+  117  install/install.miriad
+  118  install/install.miriad
+  119  cd
+  120  curl ftp://ftp.astro.umd.edu/progs/carma/miriad_mac10.8.tar.gz | tar zxf - 
+  121  curl ftp://ftp.astro.umd.edu/progs/carma/miriad_mac10.8.tar.gz | tar zxf - 
+  122  cd miriad
+  123  install/make_miriad_starts
+  124  source miriad_start.sh
+  125  date
+  126  date
+  127  date
+  128  idl
+  129  exit
+  130  cd /Applications/ITT/license/
+  131  ls
+  132  scp sluszcz@beast.berkeley.edu:/indirect/apps3/rsi/idl_8.1/license/license.data.saturn .
+  133  ls
+  134  scp sluszcz@beast.berkeley.edu:/indirect/apps3/rsi/idl_8.1/license/license.dat.saturn .
+  135  ls
+  136  more readme.txt 
+  137  pwd
+  138  ls
+  139  mv license.dat.lupus license.dat.lupus.broke
+  140  ls
+  141  ls -ltr
+  142  cnmod +rwx license.dat.saturn 
+  143  ls -ltr
+  144  chmod +rwx license.dat.saturn 
+  145  ls
+  146  ls -ltr
+  147  chmod +777 license.dat.saturn 
+  148  chmod +755 license.dat.saturn 
+  149  chmod +744 license.dat.saturn 
+  150  chmod 744 license.dat.saturn 
+  151  ls -ltr
+  152  chmod 777 license.dat.saturn 
+  153  ls -ltr
+  154  mv license.dat.lupus.broke license.dat.lupus
+  155  pwd
+  156  more license.dat.saturn 
+  157  idl
+  158  idl
+  159  idl
+  160  idl
+  161  echo $LM_LICENSE_FILE
+  162  cd analysis/work/nir/multiwavel_2003/data/
+  163  idl
+  164  idl
+  165  cd /Applications/ITT/license/
+  166  ls
+  167  amacs license.dat.lupus 
+  168  amacs license.dat.saturn 
+  169  source .idlenv 
+  170  amacs .idlenv 
+  171  cd /Applications/ITT/license/
+  172  ls
+  173  more license.dat.lupus 
+  174  ssh -Y  sluszcz@beast.berkeley.edu
+  175  date
+  176  cd analysis/work/nir/multiwavel_2003/
+  177  cd data/
+  178  curl  http://astro.berkeley.edu/~imke/statia/reg_files/*.gz
+  179  ls
+  180  curl  "http://astro.berkeley.edu/~imke/statia/reg_files/*.gz"
+  181  pwd
+  182  idl
+  183  idl
+  184  idl
+  185  export Applications/ITT/license/license.dat.saturn
+  186  export LM_LICENSE_FILE='/Applications/ITT/license/license.dat.saturn'
+  187  idl
+  188  source .idlenv
+  189  source ~/.idlenv
+  190  idl
+  191  echo $LM_LICENSE_FILE
+  192  amacs /Applications/ITT/license/license.dat.saturn
+  193  source ~.idlenv
+  194  source ~/.idlenv
+  195  idl
+  196  source ~/.idlenv
+  197  idl
+  198  source configenv
+  199  id
+  200  id
+  201  idl
+  202  source configenv
+  203  idl
+  204  source configenv
+  205  id
+  206  idl
+  207  source configenv
+  208  idl
+  209  ssh -Y sluszcz@beast.berkeley.edu
+  210  cd analysis/work/mm/
+  211  ls
+  212  cd data/
+  213  ls
+  214  cd ..
+  215  cd map/
+  216  ls
+  217  cd final/
+  218  ls
+  219  cd uv/
+  220  ls
+  221  scp -r sluszcz@beast.berkeley.edu:/indirect/mozzy11/sluszcz/workCARMA/final/uv/daily/D_11mar2009.uv .
+  222  ls
+  223  uvlist options=spectra vis=D_11mar2009.uv
+  224  ls
+  225  rm -r D_11mar2009.uv/
+  226  ls
+  227  csh
+  228  source .profile
+  229  source ~/.profile
+  230  .csh
+  231  csh
+  232  amacs .idlenv
+  233  amacs .profile
+  234  sudo port sync
+  235  sudo port -vunk upgrade miriad
+  236  date
+  237  cd analysis/work/nir/multiwavel_2003/
+  238  idl
+  239  date
+  240  cd analysis/work/nir/neptune_repolocal/
+  241  source configenv
+  242  idl
+  243  idl
+  244  cd analysis/work/nir/neptune_repolocal/
+  245  source configenv
+  246  idl
+  247  amacs .idlenv
+  248  amacs idlstartup.pro
+  249  ls
+  250  amacs .cshrc
+  251  amacs .profile
+  252  amacs .idlenv
+  253  idl
+  254  source configenv
+  255  idl
+  256  cd analysis/work/nir/src/
+  257  hg pull
+  258  date
+  259  source configenv
+  260  idl
+  261  ssh -Y sluszcz@beast.berkeley.edu
+  262  ls -ltr
+  263  tail run_1.log 
+  264  tail run_1.log 
+  265  tail -100 run_1.log 
+  266  ps
+  267  grep save run*
+  268  grep SAVE run*
+  269  grep 'SAVE' run*
+  270  ls 
+  271  ls -a
+  272  ./run_model_IF.sh
+  273  ls -ltr
+  274  ls -ltr
+  275  tail -100 run_1.log 
+  276  ls -ltr
+  277  tail -100 run_1.log 
+  278  ls -ltr
+  279  tail -100 run_1.log 
+  280  ls -ltr
+  281  ls -ltr
+  282  tail -100 run_1.log 
+  283  tail -100 run_6.log 
+  284  ls -ltr
+  285  tail -100 run_6.log 
+  286  grep SAVE *.log
+  287  grep 'SAVE' *.log
+  288  ps
+  289  kill 6277 6279 6281 6283 6285 6287
+  290  ps
+  291  ./run_model_IF.sh
+  292  tail -100 run_6.log 
+  293  tail -100 run_6.log 
+  294  tail -100 run_6.log 
+  295  tail -100 run_6.log 
+  296  tail -100 run_6.log 
+  297  ps
+  298  ps
+  299  ./run_model_IF.sh
+  300  ./run_model_IF.sh
+  301  ps
+  302  ps
+  303  ps
+  304  tail -100 run_6.log 
+  305  tail -100 run_6.log 
+  306  tail -100 run_6.log 
+  307  tail -100 run_6.log 
+  308  ps
+  309  kill 65*
+  310  kill 6565320-65392
+  311  kill 65320-65392
+  312  kill 65320 65322 65324 65326 65328 65330 65332
+  313  ps
+  314  ls -ltr
+  315  tail run_1.log 
+  316  tail -50 run_1.log 
+  317  ps
+  318  kil 65380 65382 65384 85386 65388 65390 65392
+  319  kill 65380 65382 65384 85386 65388 65390 65392
+  320  ps
+  321  kil 65386
+  322  kill 65386
+  323  ps
+  324  tail -100 run_4.log 
+  325  ./run_model_IF.sh
+  326  ps
+  327  ls
+  328  ls -ltr
+  329  tail run_1.log 
+  330  tail run_1.log 
+  331  tail run_1.log 
+  332  tail run_1.log 
+  333  tail -100 run_1.log 
+  334  ps
+  335  kil 67813 67815 67817 67819 67821 67823 67825
+  336  kill 67813 67815 67817 67819 67821 67823 67825
+  337  ps
+  338  ./run_model_IF.sh
+  339  tail -100 run_1.log 
+  340  tail -100 run_1.log 
+  341  tail -100 run_1.log 
+  342  tail -100 run_1.log 
+  343  tail -100 run_1.log 
+  344  tail -100 run_1.log 
+  345  tail -100 run_1.log 
+  346  tail -100 run_1.log 
+  347  tail -100 run_1.log 
+  348  tail -100 run_1.log 
+  349  tail -100 run_1.log 
+  350  ps
+  351  kill 68725 68727 68729 68731 68733 68735 68737
+  352  ps
+  353  ./run_model_IF.sh
+  354  tail -100 run_1.log 
+  355  tail -100 run_1.log 
+  356  tail -100 run_1.log 
+  357  jobs
+  358  ps
+  359  kill 73993 73995
+  360  ./run_model_IF.sh
+  361  tail -100 run_1.log 
+  362  tail -100 run_1.log 
+  363  tail -100 run_1.log 
+  364  ps
+  365  kill 75986 75988
+  366  ./run_model_IF.sh
+  367  tail -100 run_1.log 
+  368  tail -100 run_1.log 
+  369  ps
+  370  kill 76972 76974
+  371  ./run_model_IF.sh
+  372  tail -100 run_1.log 
+  373  ps
+  374  kill 78170 78172
+  375  ./run_model_IF.sh
+  376  tail -100 run_1.log 
+  377  tail -100 run_1.log 
+  378  tail -100 run_1.log 
+  379  tail -100 run_1.log 
+  380  ls -ltr
+  381  tail -100 run_1.log 
+  382  ls -ltr
+  383  tail -100 run_1.log 
+  384  grep seconds run_1.log 
+  385  grep seconds run_1.log 
+  386  tail -100 run_1.log 
+  387  tail -100 run_1.log 
+  388  date
+  389  ls -ltr
+  390  tail -100 run_1.log 
+  391  ls
+  392  cd ../neptune_repolocal/out
+  393  ls
+  394  ls -ltr
+  395  date
+  396  source configenv
+  397  idl
+  398  source configenv
+  399  idl
+  400  date
+  401  echo $OSTYPE
+  402  cd analysis/work/nir/
+  403  idl
+  404  date
+  405  date
+  406  source configenv
+  407  idl
+  408  idl
+  409  source configenv
+  410  idl
+  411  source configenv
+  412  idl
+  413  idl
+  414  source configenv
+  415  id
+  416  idl
+  417  source configenv
+  418  idl
+  419  idl
+  420  source configenv
+  421  idl
+  422  cd analysis/work/nir/neptune_repolocal/
+  423  source configenv
+  424  idl
+  425  pip install --upgrade astropy
+  426  pip install emcee
+  427  pip install sqlalchemy
+  428  pip install scikit-image
+  429  pip install scikit-lear
+  430  pip install scikit-learn
+  431  cd ~/.continuum
+  432  mv ../Downloads/license_academic_20130707084426.txt .
+  433  ls
+  434  conda update conda
+  435  conda install accelerate
+  436  conda install iopro
+  437  cd
+  438  ls
+  439  mkdir scicoder
+  440  ls
+  441  cd scicoder/
+  442  cd analysis/work/nir/multiwavel_2003/
+  443  ls
+  444  ./run_model_IF.sh 
+  445  ls -ltr
+  446  tail run_1.log 
+  447  tail run_1.log 
+  448  tail run_1.log 
+  449  tail -100 run_1.log 
+  450  tail -100 run_1.log 
+  451  tail -100 run_1.log 
+  452  ls -ltr
+  453  ls -ltr
+  454  tail -100 run_1.log 
+  455  grep seconds run_1.log 
+  456  grep seconds run_1.log 
+  457  ls -ltr
+  458  tail -100 run_1.log 
+  459  ls -ltr
+  460  tail -100 run_1.log 
+  461  tail -100 run_1.log 
+  462  ls -ltr
+  463  date
+  464  ls
+  465  cd Downloads/
+  466  ls
+  467  ls -ltr
+  468  bash Anaconda-1.6.1-MacOSX-x86_64.pkg
+  469  chmod +rwx Anaconda-1.6.1-MacOSX-x86_64.pkg 
+  470  bash Anaconda-1.6.1-MacOSX-x86_64.pkg 
+  471  ls -ltr
+  472  pip install --upgrade astropy
+  473  date
+  474  ssh beast
+  475  cd
+  476  ls
+  477  rm  .ssh:config
+  478  rm ' .ssh:config'
+  479  ls
+  480  ls
+  481  cd .ssh
+  482  amacs config
+  483  emacs config &
+  484  ls
+  485  kill %1
+  486  jobs
+  487  jobs
+  488  ls
+  489  mv ../config .
+  490  ls
+  491  amacs config 
+  492  more known_hosts 
+  493  ls
+  494  cd ..
+  495  ls -a
+  496  ls
+  497  cd
+  498  cd .ssh
+  499  ls
+  500  amacs
+  501  cd scicoder/
+  502  ls
+  503  hg clone https://github.com/SciCoder/SciCoder.2013.07.git
+  504  hg clone https://github.com/SciCoder/SciCoder.2013.07.git
+  505  hg clone git@github.com:SciCoder/SciCoder.2013.07.git
+  506  git clone git@github.com:SciCoder/SciCoder.2013.07.git
+  507  git clone git@github.com:SciCoder/SciCoder.2013.07.git
+  508  git clone git@github.com:SciCoder/SciCoder.2013.07.git
+  509  git clone https://github.com/SciCoder/SciCoder.2013.07
+  510  ls
+  511  cd SciCoder.2013.07/
+  512  ls
+  513  cd talks/
+  514  ls
+  515  python --version
+  516  cd ../..
+  517  ls
+  518  ls
+  519  chmod +x hello_world.py 
+  520  hello_world.py
+  521  ./hello_world.py 
+  522  python hello_world.py 
+  523  history
+  524  history >> history_2.txt

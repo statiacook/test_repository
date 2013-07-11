@@ -1,0 +1,500 @@
+   37  oplot, lambda, mspect[*,incy,inct,inca,inp,inH,inssa,i], color=101+i&$
+   38  endfor
+   39  idl
+   40  date
+   41  idl
+   42  source configenv
+   43  idl
+   44  cd analysis/work/mm/kdk/
+   45  scp -r sluszcz@beast.berkeley.edu:/indirect/mozzy1/kdekleer/carma/Io2013a_C2b/*.csh .
+   46  amacs Io_script.csh 
+   47  ssh -Y sluszcz@beast.berkeley.edu
+   48  source configenv
+   49  idl
+   50  source configenv
+   51  idl
+   52  cd /usr/local/lib/
+   53  ls
+   54  amacs .profile
+   55  cd analysis/work/mm/kdk/
+   56  ls
+   57  amacs Io_script_statia.csh &
+   58  ./Io_script_statia.csh selfcalcal
+   59  retall
+   60  source /Users/statia/miriad/source miriad_start.sh
+   61  source /Users/statia/miriad/miriad_start.sh
+   62  ./Io_script_statia.csh selfcalcal
+   63  ./Io_script_statia.csh startup
+   64  locate libiconf.2.dylib
+   65  locate libiconf.3.dylib
+   66  locate libgfortran.3.dylib
+   67  otool -L opt/local/lib/gcc45/libgfortran.3.dylib
+   68  locate libgfortran
+   69  cd /usr
+   70  locate libgfortran
+   71  cd
+   72  cd Downloads/
+   73  ls -ltr
+   74  sudo tar -xvf gcc-mlion.tar -C /
+   75  cd
+   76  cd /usr/local/lib/
+   77  ls
+   78  cd
+   79  ftp://ftp.astro.umd.edu/progs/carma/miriad_mac10.8_gfortran.tar.gz | tar zxf -
+   80  curl ftp://ftp.astro.umd.edu/progs/carma/miriad_mac10.8_gfortran.tar.gz | tar zxf -
+   81  ls
+   82  ls -ltr
+   83  cd miria
+   84  cd miriad
+   85  wget ftp://ftp.astro.umd.edu/progs/carma/miriad_mac10.8_gfortran.tar.gz
+   86  curl ftp://ftp.astro.umd.edu/progs/carma/miriad_mac10.8_gfortran.tar.gz | tar zxf -
+   87  curl ftp://ftp.astro.umd.edu/progs/carma/miriad_mac10.8.tar.gz | tar zxf -
+   88  cd miriad
+   89  install/make_miriad_starts
+   90  source miriad_start.csh
+   91  source miriad_start.sh
+   92  cd $MIR
+   93  ls
+   94  pwd
+   95  more VERSION
+   96    install/test_a_new_miriad_cvs rootdir=. reuse=1 auto=1
+   97  install/install.miriad
+   98  ls
+   99  cd install
+  100  ls
+  101  amacs install.miriad
+  102  ls
+  103  cd ..
+  104  ls
+  105  more VERSIONA
+  106  more VERSIONS
+  107  cd install
+  108  install/install.miriad
+  109  cd ..
+  110  install/install.miriad
+  111  install/install.miriad
+  112  cd ..
+  113  curl ftp://ftp.astro.umd.edu/progs/carma/miriad.tar.gz | tar zxf -
+  114  cd miriad
+  115    cvschroot :pserver:$USER@cvs.astro.umd.edu:/home/cvsroot
+  116  cvs login
+  117  cvs login
+  118   cvs update -d
+  119  amacs install/install.miriad
+  120  install/install.miriad
+  121  cd miriad/
+  122  install/install.miriad
+  123  install/install.miriad
+  124  cd
+  125  curl ftp://ftp.astro.umd.edu/progs/carma/miriad_mac10.8.tar.gz | tar zxf - 
+  126  curl ftp://ftp.astro.umd.edu/progs/carma/miriad_mac10.8.tar.gz | tar zxf - 
+  127  cd miriad
+  128  install/make_miriad_starts
+  129  source miriad_start.sh
+  130  date
+  131  date
+  132  date
+  133  idl
+  134  exit
+  135  cd /Applications/ITT/license/
+  136  ls
+  137  scp sluszcz@beast.berkeley.edu:/indirect/apps3/rsi/idl_8.1/license/license.data.saturn .
+  138  ls
+  139  scp sluszcz@beast.berkeley.edu:/indirect/apps3/rsi/idl_8.1/license/license.dat.saturn .
+  140  ls
+  141  more readme.txt 
+  142  pwd
+  143  ls
+  144  mv license.dat.lupus license.dat.lupus.broke
+  145  ls
+  146  ls -ltr
+  147  cnmod +rwx license.dat.saturn 
+  148  ls -ltr
+  149  chmod +rwx license.dat.saturn 
+  150  ls
+  151  ls -ltr
+  152  chmod +777 license.dat.saturn 
+  153  chmod +755 license.dat.saturn 
+  154  chmod +744 license.dat.saturn 
+  155  chmod 744 license.dat.saturn 
+  156  ls -ltr
+  157  chmod 777 license.dat.saturn 
+  158  ls -ltr
+  159  mv license.dat.lupus.broke license.dat.lupus
+  160  pwd
+  161  more license.dat.saturn 
+  162  idl
+  163  idl
+  164  idl
+  165  idl
+  166  echo $LM_LICENSE_FILE
+  167  cd analysis/work/nir/multiwavel_2003/data/
+  168  idl
+  169  idl
+  170  cd /Applications/ITT/license/
+  171  ls
+  172  amacs license.dat.lupus 
+  173  amacs license.dat.saturn 
+  174  source .idlenv 
+  175  amacs .idlenv 
+  176  cd /Applications/ITT/license/
+  177  ls
+  178  more license.dat.lupus 
+  179  ssh -Y  sluszcz@beast.berkeley.edu
+  180  date
+  181  cd analysis/work/nir/multiwavel_2003/
+  182  cd data/
+  183  curl  http://astro.berkeley.edu/~imke/statia/reg_files/*.gz
+  184  ls
+  185  curl  "http://astro.berkeley.edu/~imke/statia/reg_files/*.gz"
+  186  pwd
+  187  idl
+  188  idl
+  189  idl
+  190  export Applications/ITT/license/license.dat.saturn
+  191  export LM_LICENSE_FILE='/Applications/ITT/license/license.dat.saturn'
+  192  idl
+  193  source .idlenv
+  194  source ~/.idlenv
+  195  idl
+  196  echo $LM_LICENSE_FILE
+  197  amacs /Applications/ITT/license/license.dat.saturn
+  198  source ~.idlenv
+  199  source ~/.idlenv
+  200  idl
+  201  source ~/.idlenv
+  202  idl
+  203  source configenv
+  204  id
+  205  id
+  206  idl
+  207  source configenv
+  208  idl
+  209  source configenv
+  210  id
+  211  idl
+  212  source configenv
+  213  idl
+  214  ssh -Y sluszcz@beast.berkeley.edu
+  215  cd analysis/work/mm/
+  216  ls
+  217  cd data/
+  218  ls
+  219  cd ..
+  220  cd map/
+  221  ls
+  222  cd final/
+  223  ls
+  224  cd uv/
+  225  ls
+  226  scp -r sluszcz@beast.berkeley.edu:/indirect/mozzy11/sluszcz/workCARMA/final/uv/daily/D_11mar2009.uv .
+  227  ls
+  228  uvlist options=spectra vis=D_11mar2009.uv
+  229  ls
+  230  rm -r D_11mar2009.uv/
+  231  ls
+  232  csh
+  233  source .profile
+  234  source ~/.profile
+  235  .csh
+  236  csh
+  237  amacs .idlenv
+  238  amacs .profile
+  239  sudo port sync
+  240  sudo port -vunk upgrade miriad
+  241  date
+  242  cd analysis/work/nir/multiwavel_2003/
+  243  idl
+  244  date
+  245  cd analysis/work/nir/neptune_repolocal/
+  246  source configenv
+  247  idl
+  248  idl
+  249  cd analysis/work/nir/neptune_repolocal/
+  250  source configenv
+  251  idl
+  252  amacs .idlenv
+  253  amacs idlstartup.pro
+  254  ls
+  255  amacs .cshrc
+  256  amacs .profile
+  257  amacs .idlenv
+  258  idl
+  259  source configenv
+  260  idl
+  261  cd analysis/work/nir/src/
+  262  hg pull
+  263  date
+  264  source configenv
+  265  idl
+  266  ssh -Y sluszcz@beast.berkeley.edu
+  267  ls -ltr
+  268  tail run_1.log 
+  269  tail run_1.log 
+  270  tail -100 run_1.log 
+  271  ps
+  272  grep save run*
+  273  grep SAVE run*
+  274  grep 'SAVE' run*
+  275  ls 
+  276  ls -a
+  277  ./run_model_IF.sh
+  278  ls -ltr
+  279  ls -ltr
+  280  tail -100 run_1.log 
+  281  ls -ltr
+  282  tail -100 run_1.log 
+  283  ls -ltr
+  284  tail -100 run_1.log 
+  285  ls -ltr
+  286  ls -ltr
+  287  tail -100 run_1.log 
+  288  tail -100 run_6.log 
+  289  ls -ltr
+  290  tail -100 run_6.log 
+  291  grep SAVE *.log
+  292  grep 'SAVE' *.log
+  293  ps
+  294  kill 6277 6279 6281 6283 6285 6287
+  295  ps
+  296  ./run_model_IF.sh
+  297  tail -100 run_6.log 
+  298  tail -100 run_6.log 
+  299  tail -100 run_6.log 
+  300  tail -100 run_6.log 
+  301  tail -100 run_6.log 
+  302  ps
+  303  ps
+  304  ./run_model_IF.sh
+  305  ./run_model_IF.sh
+  306  ps
+  307  ps
+  308  ps
+  309  tail -100 run_6.log 
+  310  tail -100 run_6.log 
+  311  tail -100 run_6.log 
+  312  tail -100 run_6.log 
+  313  ps
+  314  kill 65*
+  315  kill 6565320-65392
+  316  kill 65320-65392
+  317  kill 65320 65322 65324 65326 65328 65330 65332
+  318  ps
+  319  ls -ltr
+  320  tail run_1.log 
+  321  tail -50 run_1.log 
+  322  ps
+  323  kil 65380 65382 65384 85386 65388 65390 65392
+  324  kill 65380 65382 65384 85386 65388 65390 65392
+  325  ps
+  326  kil 65386
+  327  kill 65386
+  328  ps
+  329  tail -100 run_4.log 
+  330  ./run_model_IF.sh
+  331  ps
+  332  ls
+  333  ls -ltr
+  334  tail run_1.log 
+  335  tail run_1.log 
+  336  tail run_1.log 
+  337  tail run_1.log 
+  338  tail -100 run_1.log 
+  339  ps
+  340  kil 67813 67815 67817 67819 67821 67823 67825
+  341  kill 67813 67815 67817 67819 67821 67823 67825
+  342  ps
+  343  ./run_model_IF.sh
+  344  tail -100 run_1.log 
+  345  tail -100 run_1.log 
+  346  tail -100 run_1.log 
+  347  tail -100 run_1.log 
+  348  tail -100 run_1.log 
+  349  tail -100 run_1.log 
+  350  tail -100 run_1.log 
+  351  tail -100 run_1.log 
+  352  tail -100 run_1.log 
+  353  tail -100 run_1.log 
+  354  tail -100 run_1.log 
+  355  ps
+  356  kill 68725 68727 68729 68731 68733 68735 68737
+  357  ps
+  358  ./run_model_IF.sh
+  359  tail -100 run_1.log 
+  360  tail -100 run_1.log 
+  361  tail -100 run_1.log 
+  362  jobs
+  363  ps
+  364  kill 73993 73995
+  365  ./run_model_IF.sh
+  366  tail -100 run_1.log 
+  367  tail -100 run_1.log 
+  368  tail -100 run_1.log 
+  369  ps
+  370  kill 75986 75988
+  371  ./run_model_IF.sh
+  372  tail -100 run_1.log 
+  373  tail -100 run_1.log 
+  374  ps
+  375  kill 76972 76974
+  376  ./run_model_IF.sh
+  377  tail -100 run_1.log 
+  378  ps
+  379  kill 78170 78172
+  380  ./run_model_IF.sh
+  381  tail -100 run_1.log 
+  382  tail -100 run_1.log 
+  383  tail -100 run_1.log 
+  384  tail -100 run_1.log 
+  385  ls -ltr
+  386  tail -100 run_1.log 
+  387  ls -ltr
+  388  tail -100 run_1.log 
+  389  grep seconds run_1.log 
+  390  grep seconds run_1.log 
+  391  tail -100 run_1.log 
+  392  tail -100 run_1.log 
+  393  date
+  394  ls -ltr
+  395  tail -100 run_1.log 
+  396  ls
+  397  cd ../neptune_repolocal/out
+  398  ls
+  399  ls -ltr
+  400  date
+  401  source configenv
+  402  idl
+  403  source configenv
+  404  idl
+  405  date
+  406  echo $OSTYPE
+  407  cd analysis/work/nir/
+  408  idl
+  409  date
+  410  date
+  411  source configenv
+  412  idl
+  413  idl
+  414  source configenv
+  415  idl
+  416  source configenv
+  417  idl
+  418  idl
+  419  source configenv
+  420  id
+  421  idl
+  422  source configenv
+  423  idl
+  424  idl
+  425  source configenv
+  426  idl
+  427  cd analysis/work/nir/neptune_repolocal/
+  428  source configenv
+  429  idl
+  430  pip install --upgrade astropy
+  431  pip install emcee
+  432  pip install sqlalchemy
+  433  pip install scikit-image
+  434  pip install scikit-lear
+  435  pip install scikit-learn
+  436  cd ~/.continuum
+  437  mv ../Downloads/license_academic_20130707084426.txt .
+  438  ls
+  439  conda update conda
+  440  conda install accelerate
+  441  conda install iopro
+  442  cd
+  443  ls
+  444  mkdir scicoder
+  445  ls
+  446  cd scicoder/
+  447  cd analysis/work/nir/multiwavel_2003/
+  448  ls
+  449  ./run_model_IF.sh 
+  450  ls -ltr
+  451  tail run_1.log 
+  452  tail run_1.log 
+  453  tail run_1.log 
+  454  tail -100 run_1.log 
+  455  tail -100 run_1.log 
+  456  tail -100 run_1.log 
+  457  ls -ltr
+  458  ls -ltr
+  459  tail -100 run_1.log 
+  460  grep seconds run_1.log 
+  461  grep seconds run_1.log 
+  462  ls -ltr
+  463  tail -100 run_1.log 
+  464  ls -ltr
+  465  tail -100 run_1.log 
+  466  tail -100 run_1.log 
+  467  ls -ltr
+  468  date
+  469  ls
+  470  cd Downloads/
+  471  ls
+  472  ls -ltr
+  473  bash Anaconda-1.6.1-MacOSX-x86_64.pkg
+  474  chmod +rwx Anaconda-1.6.1-MacOSX-x86_64.pkg 
+  475  bash Anaconda-1.6.1-MacOSX-x86_64.pkg 
+  476  ls -ltr
+  477  pip install --upgrade astropy
+  478  date
+  479  ssh beast
+  480  cd
+  481  ls
+  482  rm  .ssh:config
+  483  rm ' .ssh:config'
+  484  ls
+  485  ls
+  486  cd .ssh
+  487  amacs config
+  488  emacs config &
+  489  ls
+  490  kill %1
+  491  jobs
+  492  jobs
+  493  ls
+  494  mv ../config .
+  495  ls
+  496  amacs config 
+  497  more known_hosts 
+  498  ls
+  499  cd ..
+  500  ls -a
+  501  cd scicoder/
+  502  git clone https://github.com/statiacook/test_repository.git
+  503  git clone https://github.com/statiacook/test_repository.git
+  504  ls
+  505  cd test_repository/
+  506  ls
+  507  ls -l
+  508  ls -al
+  509  touch newfile.txt
+  510  git status
+  511  git add
+  512  git add newfile.txt 
+  513  git commit .
+  514  git commit . "added empty file"
+  515  git commit . -m "added empty file"
+  516  git status
+  517  git branch
+  518  git push origin master
+  519  git fetch
+  520  git merge
+  521  git pull
+  522  ls -al
+  523  touch .gitconfig
+  524  ls
+  525  ls -a
+  526  amacs .gitconfig
+  527  cd
+  528  touch .gitignore_global
+  529  amacs .gitignore_global
+  530  ls
+  531  ls -a
+  532  amacs hgignore_global
+  533  amacs .hgignore_global
+  534  amacs .gitignore_global 
+  535  history
+  536  history >> scicoder/history.txt
